@@ -1,0 +1,122 @@
+body {
+	background: #CAEBC7;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title h1 {
+	font-size: 40px;
+	color: rgb(0, 0, 0);	
+}
+
+.calc {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 280px;
+	
+}
+
+.calc_keys {
+	display: grid;
+	gap: 5px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 60px);
+	padding: 10px;
+	background: #fff;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	outline:none;
+	border: none;
+	
+}
+
+.operator,
+.number, 
+.decimal,
+.clear,
+.allclear,
+.equals{
+	font-size: 24px;
+	font-weight: 700;
+	border-radius: 30px;
+	cursor: pointer;
+	color: black;
+	outline: none;
+	border: none;
+	transition: opacity 0.1s ease-in-out;
+}
+
+.allclear,
+.clear{
+	background-color: #CAEBC7;
+}
+.operator{
+	background-color: #F3E1BB;
+}
+.number,
+.decimal{
+	background-color: #F7EFE5;
+}
+.equals{
+	background-color: #f8cd69;
+
+}
+
+
+.display {
+	width: 260px;
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 36px;
+	font-weight: 700;
+	background-color: #fadeae;
+	text-align: end;
+	color: black;
+	border: none;
+	outline: none;
+}
+
+.operation{
+	max-width: 280px;
+	height: 24px;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #fadeae;
+	text-align: end;
+	color: black;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.span-2 {
+	grid-column: span 2;
+}
+
+.span-col-2 {
+	grid-row: span 2;
+}
+
+.changeColorEval {
+	background-color: rgb(207, 78, 78);
+}
+
+.calc_keys button:hover {
+	background-color: #b4acac;
+}
+
+.button-clicked {
+	opacity: 0;
+}
